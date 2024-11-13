@@ -103,7 +103,8 @@ describe('Future tests', () => {
 
 it('should throw an error when called with invalid arguments', () => {
   expect(() => {
-    const userss = []
+    const userss = [];
+
     restoreNames(userss);
   }).toThrow();
 });
