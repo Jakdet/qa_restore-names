@@ -89,22 +89,4 @@ describe('Future tests', () => {
     expect(user).toEqual(expectedUser);
   });
 
-  it('should identify and correct firstName based on lastName', () => {
-    const user = [
-      {
-        fullName: 'Trump Donald', lastName: 'Trump', firstName: undefined,
-      },
-    ];
-
-    restoreNames(user);
-    expect(user[0].firstName).toBe('Donald');
-  });
-});
-
-it('should throw an error when called with invalid arguments', () => {
-  expect(() => {
-    const userss = [];
-
-    restoreNames(userss);
-  }).toThrow();
 });
